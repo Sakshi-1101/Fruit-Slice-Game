@@ -1,0 +1,338 @@
+html{
+    height: 100%;
+    background: url(images/background_img.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#Coverimg{
+    width: 350px;
+    height: 500px;
+}
+
+#heading{
+    position: absolute;
+    top: 235px;
+    left: 130px;
+    font-size: 50px;
+    font-family: 'Rampart One', cursive;
+    font-weight: bold;
+    color: darkred;
+    text-shadow: 2px 5px rgb(255, 250, 228);
+
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: row ;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+#imgcontainer{
+    margin-top: 50px;
+    margin-right: 50px;
+    opacity: 0.9;
+    width: 350px;
+    height: 500px;
+    z-index: 0 ;
+    float: left ;
+}
+
+#container{
+    height: 520px;
+    width: 800px;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(1px);
+    margin: 5px auto;
+    padding: 20px;
+    border-radius: 10px;  
+    float: right ;  
+    position: relative;
+}
+
+#score{
+    background: url(images/img2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-size: 90px 40px;
+    font-family: 'Abril Fatface', cursive;
+    color: rgba(49, 6, 6, 0.979) ;
+    padding: 7px;
+    position: absolute;
+    left: 700px;
+    border: 3px rgb(97, 10, 10);
+    border-style: inset;
+    border-radius: 5px ;
+    box-shadow: 2px 2px 4px 1px rgb(87, 63, 63) ;
+    -moz-box-shadow: 2px 2px 4px 1px rgb(92, 63, 63) ;
+    -webkit-box-shadow: 2px 2px 4px 1px rgb(95, 67, 67) ;
+}
+
+#fruitsContainer{
+    width: 700px;
+    height: 350px;
+    margin: 50px auto 20px auto;
+    background: url(images/img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:3px 3px 5px 2px rgb(2, 58, 20);
+    cursor: url(images/cursor_img.png) 15 15 , crosshair;
+}
+
+#instruction{
+    width: 450px;
+    height: 50px;
+    background: url(images/img.jpg);
+    border-radius: 7px ;
+    border: 2px solid black ;
+    box-shadow: -3px 3px 4px 1px rgba(0, 0, 0, 0.712);
+    -moz-box-shadow: -3px 3px 4px 1px rgba(0, 0, 0, 0.712);
+    -webkit-box-shadow: -3px 3px 4px 1px rgba(0, 0, 0, 0.712);
+    margin: 10px auto;
+    color: rgba(54, 13, 7, 0.925);
+    text-shadow: 2px 2px 1px rgba(255, 246, 246, 0.897);
+    -webkit-text-stroke: 0.5px rgb(66, 6, 6);
+    font-size: 30px ;
+    font-family: 'IM Fell English SC', serif;
+    font-weight: 50px;
+    text-align: center; 
+    line-height: 50px ; 
+}
+
+#startreset{
+    width: 100px;
+    height: 25px;
+    padding: 10px;
+    background: url(images/img.jpg);
+    border-radius: 7px ;
+    border: 2px solid black ;
+    box-shadow: -3px 3px 4px 1px rgba(0, 0, 0, 0.712);
+    -moz-box-shadow: -3px 3px 4px 1px rgba(0, 0, 0, 0.712);
+    -webkit-box-shadow: -3px 3px 4px 1px rgba(0, 0, 0, 0.712);
+    font-size: 20px ;
+    font-family:"Sofia", sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    margin: 0 auto;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;   
+}
+
+#startreset:hover{
+    background-color:wheat;
+    box-shadow: -3px 3px 4px 1px rgb(80, 39, 1) ;
+    -moz-box-shadow: -3px 3px 4px 1px rgb(80, 39, 1) ;
+    -webkit-box-shadow: -3px 3px 4px 1px rgb(80, 39, 1) ;
+    color: rgb(80, 39, 1) ;
+    font-style: normal;
+    font-weight: bolder ;
+    text-shadow: 2px 2px 2px rgb(243, 238, 238);
+}
+
+#startreset:active{
+    box-shadow: 0px 0px 0px 2px rgb(80, 39, 1) ;
+    -moz-box-shadow: 0px 0px 0px 2px rgb(80, 39, 1) ;
+    -webkit-box-shadow: 0px 0px 0px 2px rgb(80, 39, 1) ;
+    top: 5px ;
+}
+
+#trialsLeft{
+    width: 80px;
+    padding: 7px;
+    position: absolute;
+    background: url(images/img2.jpg);
+    background-size: 110px 40px;
+    background-repeat: no-repeat;
+    border: 3px rgb(97, 10, 10);
+    border-style: inset;
+    border-radius: 5px ;
+    box-shadow: 2px 2px 4px 1px rgb(87, 63, 63) ;
+    -moz-box-shadow: 2px 2px 4px 1px rgb(92, 63, 63) ;
+    -webkit-box-shadow: 2px 2px 4px 1px rgb(95, 67, 67) ;
+    left: 50px;
+    display: none;
+}
+
+#gameOver{
+    height: 200px;
+    width: 500px;
+    background: url(images/gameover_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px ;
+    color: rgb(73, 7, 7) ;
+    font-size: 50px ;
+    padding: 5px ;
+    font-family: 'Bubblegum Sans', cursive;
+    text-shadow: 3px 3px 2px rgba(244, 247, 121, 0.918);
+    -webkit-text-stroke: 1px rgb(245, 243, 243);
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 140px;
+    left: 165px;
+    z-index: 2;
+    display: none;
+    
+}
+
+.life{
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+}
+
+.fruit{
+    display: none;
+    position: absolute;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@media all and (max-width: 1240px){
+    #mainContainer{
+        flex-direction: column;
+        align-content: center ;
+        max-width: fit-content;
+    }
+
+    .leftContainer{
+        display: none;    
+    }
+
+    #container{
+        height: 500px ;
+        width: 600px ;
+    }
+
+    #fruitsContainer{
+        height: 300px;
+        width: 550px;
+    }
+
+    #fruit1{
+        height: 95px;
+        width: 95px;
+    }
+
+    #score{
+        left: 520px;
+    }
+
+    #trialsLeft{
+        left: 25px;
+    }
+
+    #gameOver{
+        width: 400px;
+        top: 120px;
+        left: 120px;
+    }
+
+    div.val{
+        display: none;
+    }
+}
+
+@media all and (max-width: 800px){
+    #container{
+        height: 500px ;
+        width: 600px ;
+    }
+
+    #fruitsContainer{
+        height: 300px;
+        width: 550px;
+    }
+
+    #fruit1{
+        height: 85px;
+        width: 85px;
+    }
+
+    #score{
+        left: 520px;
+    }
+
+    #trialsLeft{
+        left: 25px;
+    }
+
+    #gameOver{
+        width: 400px;
+        top: 120px;
+        left: 120px;
+    }
+}
+
+@media all and (max-width: 600px){
+    #container{
+        height: 400px ;
+        width: 500px ;
+    }
+
+    #fruitsContainer{
+        height: 200px;
+        width: 450px;
+    }
+
+    #fruit1{
+        height: 50px;
+        width: 50px;
+    }
+
+    #score{
+        left: 400px;
+    }
+
+    #trialsLeft{
+        left: 25px;
+    }
+
+    #gameOver{
+        height: 120px;
+        width: 270px;
+        top: 100px;
+        left: 120px;
+        font-size: 30px;
+    }
+}
