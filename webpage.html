@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fruits Game</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link rel="stylesheet" href="styling.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">     
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Akronim&family=Black+Ops+One&family=Bubblegum+Sans&family=Fredericka+the+Great&family=Fredoka+One&family=Gluten:wght@100&family=Grechen+Fuemen&family=IM+Fell+English+SC&family=Rampart+One&family=Shrikhand&family=Sigmar+One&family=Sofia&family=Titan+One&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class = "mainContainer">
+
+            <div id = "imgcontainer" class = "leftContainer">
+                <p id = "heading">FRUIT <br/> SLICE <br/> GAME</p>
+                <img src = "images/heading_img.png" id = "Coverimg">
+            </div>
+
+            <div id="container">
+                <div id="score">
+                    SCORE: <span id="scorevalue">0</span>
+                </div>
+
+                <div id="trialsLeft">
+                </div>
+
+                <div id="fruitsContainer">
+                    <img id="fruit1" class="fruit">
+                </div>
+
+                <div id="instruction">
+                    SLICE FRUITS !!
+                </div>
+
+                <div id="startreset">
+                    Start Game
+                </div>
+
+                <div id="gameOver"> 
+                </div>
+            </div>
+
+        </div>
+
+        <audio id="slicesound">
+            <source src="audio/swingmp3-6045.mp3"></source>
+            <source src="audio/swingmp3-6045.ogg"></source>
+        </audio>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+               
+        <script src="jQuery.js"></script>
+    </body>
+</html>
