@@ -1,2 +1,4 @@
 # Fruit-Slice-Game
-Based on Frontend Web Development
+### _Based on Frontend Web Development_
+
+## https://fruit-slice-game-web-dev.netlify.com/
